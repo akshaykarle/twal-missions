@@ -3,10 +3,14 @@
 </a>
 <a id="hashtag-anchor"></a>
 
-<div id="posts-list">
-  <% @posts.each_with_index do |post, i| %>
-    <%= render 'post', post: post, i: i %>
-  <% end %>
+<div class="flexslider">
+  <ul class="slides">
+    <% @posts.each_with_index do |post, i| %>
+      <% if post.media_url %>
+        <%= render 'post', post: post, i: i %>
+      <% end %>
+    <% end %>
+  </ul>
 </div>
 
 <h1 id="loading"></h1>
@@ -16,5 +20,7 @@
   <a href="http://itsplatano.com" target="_blank">Justin</a>,
   <a href="http://github.com/gitjulia" target="_blank">Julia</a>,
   <a href="http://github.com/mlennon3" target="_blank">Michael</a>,
-  and <a href="https://github.com/ParkDan" target="_blank">Dan</a>
+  <a href="https://github.com/ParkDan" target="_blank">Dan</a>,
+  <a href="https://github.com/carlast22" target="_blank">Carla</a>, and
+  <a href="https://github.com/jreyes33" target="_blank">Jonathan</a>
 </section>

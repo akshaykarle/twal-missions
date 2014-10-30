@@ -1,0 +1,22 @@
+.flexslider {
+  height: 700px;
+}
+
+.flexslider .slides {
+  height: 100%;
+}
+
+.flexslider .slides li {
+  height: 100%;
+}
+.flexslider .slides img {
+  height: 100%;
+  margin: 0 auto;
+  width: auto;
+}
+.flex-control-paging li {
+  display: none;
+}
+.flex-control-paging li:nth-last-child(-n + 20) {
+  display: inline-block;
+}

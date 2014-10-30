@@ -9,18 +9,18 @@ class FeedController < ApplicationController
   def index
     respond_to do |format|
       format.html do
-        @posts = Post.sorted_posts(ENV["HASHTAG"], 100)
+        @posts = Post.sorted_posts(ENV["HASHTAG"], 10)
         render "index"
       end
       format.json do
-        @posts = Post.get_new_posts(ENV["HASHTAG"])
+        @posts = Post.get_new_posts(ENV["HASHTAG"], 10)
         render_json_posts @posts
       end
     end
   end
 
   def get_next_page
-    @posts = Post.next_posts(params[:last_post_id], 100)
+    @posts = Post.next_posts(params[:last_post_id], 10)
     render_json_posts @posts
   end
 
@@ -36,4 +36,3 @@ class FeedController < ApplicationController
   end
 
 end
-

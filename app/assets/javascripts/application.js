@@ -10,47 +10,9 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require shared
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
 //= require imagesloaded.pkgd
+//= require jquery.flexslider
 //= require_tree .
-
-$(document).on("ready", function(){
-  var postsList = document.querySelector('#posts-list');
-  // layout Masonry again after all images have loaded
-      var msnry = new Masonry(postsList);
-      imagesLoaded( postsList, function() {
-          msnry.layout();
-      });
-
-  replaceInitiallyLoadedTimestamps();
-
-  setUpScroll();
-
-  window.setInterval(function(){
-    $.ajax({
-      type: "GET",
-      url: "/",
-      contentType: "application/json; charset=utf-8",
-      ifModified: true,
-      dataType: "json",
-      success: function(response, status){
-        if(status != "notmodified") {
-          var newPosts = create_post_content(response);
-          $('#posts-list').prepend(newPosts);
-          layOutMasonry();
-        }
-      }
-    });
-  }, 5000);
-});
-
-var setUpScroll = function () {$('#up').on('click', function(e){
-    e.preventDefault();
-    var target= $('#hashtag-anchor');
-    $('html, body').stop().animate({
-        scrollTop: target.offset().top
-    }, 750);
-})};
