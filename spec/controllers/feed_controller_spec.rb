@@ -22,12 +22,12 @@ describe FeedController do
           expect(assigns(:posts)).to eq([third_post, second_post, first_post])
         end
 
-        it "should limit number of posts to 100 posts" do
+        it "should limit number of posts to 10 posts" do
           (0..150).each do |i|
             FactoryGirl.create(:post, time_of_post: Time.now - i)
           end
           get :index, :format => :html
-          expect(assigns(:posts).count).to eq(100)
+          expect(assigns(:posts).count).to eq(10)
         end
       end
     end
@@ -58,7 +58,7 @@ describe FeedController do
     it 'should return a maximum of 100 posts' do
       (0..150).each { |i| FactoryGirl.create(:post, time_of_post: Time.now - i)}
       get :get_next_page, last_post_id: third_post.id, :format => :json
-      expect(assigns(:posts).count).to eq(100)
+      expect(assigns(:posts).count).to eq(10)
     end
 
     it 'should return status not_modified if there are no more posts left' do
