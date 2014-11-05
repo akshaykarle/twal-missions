@@ -9,11 +9,32 @@
 .flexslider .slides li {
   height: 100%;
 }
-.flexslider .slides img {
+.flexslider .slides img{
   height: 100%;
   margin: 0 auto;
   width: auto;
 }
+
+.flexslider .slides .post-data{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 65%;
+}
+.flexslider .slides a {
+  color: #097AC0;
+}
+
+.flexslider .slides .author {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.flexslider .slides .text {
+  color: black;
+  display: inline;
+}
+
 .flex-control-paging li {
   display: none;
 }
