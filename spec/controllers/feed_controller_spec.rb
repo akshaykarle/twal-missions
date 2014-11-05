@@ -55,7 +55,7 @@ describe FeedController do
       expect(assigns(:posts)).to eq([second_post, first_post])
     end
 
-    it 'should return a maximum of 100 posts' do
+    it 'should return a maximum of 10 posts' do
       (0..150).each { |i| FactoryGirl.create(:post, time_of_post: Time.now - i)}
       get :get_next_page, last_post_id: third_post.id, :format => :json
       expect(assigns(:posts).count).to eq(10)
