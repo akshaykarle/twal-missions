@@ -13,7 +13,7 @@ body {
 #header {
   background-color: #FFFFFF;
   text-align: center;
-  height: 80px;
+  height: 100px;
   text-decoration: none;
   z-index: 1;
   position: fixed;
@@ -24,7 +24,7 @@ body {
 
 #header img {
   position: relative;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   clear: both;
 }
@@ -206,6 +206,10 @@ background: rgb(247, 143, 49);
 
     body {
         margin-top: 95px;
+    }
+
+    #header {
+        height: 80px;
     }
 
     .post-container
