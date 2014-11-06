@@ -1,11 +1,12 @@
+html, body {
+    height: 100%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   word-wrap: break-word;
   color: #FFF;
   background-color: #FFFFFF;
-}
-
-body {
   margin-top: 65px;
 }
 
