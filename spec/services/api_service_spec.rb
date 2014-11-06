@@ -11,7 +11,7 @@ describe APIService do
     it "parses grams and tweets from response and creates posts with parsed data" do
         tweet = FactoryGirl.build(:post,
           source: "twitter",
-          text: "Thee Namaste Nerdz. ##{ENV["HASHTAG"]}",
+          text: "##{ENV["HASHTAG"]}",
           screen_name: "bullcityrecords",
           time_of_post: "Fri Sep 21 23:40:54 +0000 2012",
           profile_image_url: "http://a0.twimg.com/profile_images/447958234/Lichtenstein_normal.jpg",

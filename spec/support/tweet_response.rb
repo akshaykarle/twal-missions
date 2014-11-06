@@ -426,7 +426,7 @@ module SampleTweetResponses
           },
           "in_reply_to_user_id_str" => nil,
           "contributors" => nil,
-          "text" => "Thee Namaste Nerdz. ##{ENV["HASHTAG"]}",
+          "text" => "##{ENV["HASHTAG"]}",
           "metadata" => {
             "iso_language_code" => "pl",
             "result_type" => "recent"
@@ -660,7 +660,7 @@ module SampleTweetResponses
             },
             "in_reply_to_user_id_str" => nil,
             "contributors" => nil,
-            "text" => "Thee Namaste Nerdz. ##{ENV["HASHTAG"]}",
+            "text" => "##{ENV["HASHTAG"]}",
             "metadata" => {
               "iso_language_code" => "pl",
               "result_type" => "recent"
@@ -894,7 +894,7 @@ module SampleTweetResponses
             },
             "in_reply_to_user_id_str" => nil,
             "contributors" => nil,
-            "text" => "Thee Namaste Nerdz. ##{ENV["HASHTAG"]}",
+            "text" => "##{ENV["HASHTAG"]}",
             "metadata" => {
               "iso_language_code" => "pl",
               "result_type" => "recent"

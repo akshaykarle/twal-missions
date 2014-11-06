@@ -11,7 +11,7 @@ describe 'home' do
     sleep ENV["API_Rate"].to_i + 0.5
     visit '/'
 
-    page.should have_content("Thee Namaste Nerdz. ##{ENV["HASHTAG"]}")
+    page.should have_content("##{ENV["HASHTAG"]}")
     page.should have_content('bullcityrecords')
     # page.should have_image(twitter_profile_image)
     page.should have_image(twitter_media_image)
@@ -25,7 +25,7 @@ describe 'home' do
   xit 'should add a tweet via automatic update', :js=> true do
     visit '/'
 
-    page.should have_content("Thee Namaste Nerdz. ##{ENV["HASHTAG"]}")
+    page.should have_content("##{ENV["HASHTAG"]}")
     page.should have_content('@bullcityrecords')
     page.should have_content('Fri Sep 21 11:30 PM')
 
@@ -33,7 +33,7 @@ describe 'home' do
     
     sleep(30.seconds)
 
-    page.should have_content("Thee Namaste Nerdz. ##{ENV["HASHTAG"]}")
+    page.should have_content("##{ENV["HASHTAG"]}")
     page.should have_content('@bullcityrecords')
     page.should have_content('Fri Sep 21 11:30 PM')
   end

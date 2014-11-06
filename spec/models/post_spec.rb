@@ -40,7 +40,7 @@ describe Post do
 
     @tweet_one = Post.create!(
       source: "twitter",
-      text: "Thee Namaste Nerdz. ##{ENV["HASHTAG"]}",
+      text: "##{ENV["HASHTAG"]}",
       screen_name: "bullcityrecords",
       time_of_post: "Fri Sep 21 22:40:54 +0000 2012",
       profile_image_url: "http://a0.twimg.com/profile_images/447958234/Lichtenstein_normal.jpg",
