@@ -12,17 +12,13 @@ describe 'home' do
     visit '/'
 
     page.should have_content("Thee Namaste Nerdz. ##{ENV["HASHTAG"]}")
-    page.should have_content('@bullcityrecords')
-    page.should have_content('Fri Sep 21 11:40:54 PM')
-    page.should have_css("i.fa.fa-2x.fa-twitter")
-    page.should have_image(twitter_profile_image)
+    page.should have_content('bullcityrecords')
+    # page.should have_image(twitter_profile_image)
     page.should have_image(twitter_media_image)
 
     page.should have_content("#elevator #kiss #love #budapest #basilica #tired")
-    page.should have_content('@pollywoah')
-    page.should have_content('Tue Sep 16 4:18:10 PM')
-    page.should have_css("i.fa.fa-2x.fa-instagram")
-    page.should have_image(instagram_profile_image)
+    page.should have_content('pollywoah')
+    # page.should have_image(instagram_profile_image)
     page.should have_image(instagram_media_image)
   end
 
