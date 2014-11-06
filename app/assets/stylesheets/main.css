@@ -7,7 +7,7 @@ body {
   word-wrap: break-word;
   color: #FFF;
   background-color: #FFFFFF;
-  margin-top: 95px;
+  margin-top: 110px;
 }
 
 #header {
@@ -24,10 +24,9 @@ body {
 
 #header img {
   position: relative;
-  top: 62%;
+  top: 50%;
   transform: translateY(-50%);
   clear: both;
-
 }
 
 .hashtag {
@@ -206,8 +205,9 @@ background: rgb(247, 143, 49);
     }
 
     body {
-        margin-top: 100px;
+        margin-top: 95px;
     }
+
     .post-container
     {
         width: 45.876%;
@@ -228,6 +228,11 @@ background: rgb(247, 143, 49);
     body {
         margin-top: 95px;
     }
+
+    #header img {
+      top: 62%;
+    }
+
     #posts-list
     {
         padding-left: 0;

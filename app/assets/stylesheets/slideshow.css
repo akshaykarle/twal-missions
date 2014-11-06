@@ -37,6 +37,9 @@
   display: inline;
 }
 
+.flexslider .flex-control-nav {
+  bottom: -60px;
+}
 .flex-control-paging li {
   display: none;
 }
