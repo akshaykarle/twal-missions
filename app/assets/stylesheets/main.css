@@ -1,4 +1,4 @@
-html, body {
+html {
     height: 100%;
 }
 
@@ -7,19 +7,27 @@ body {
   word-wrap: break-word;
   color: #FFF;
   background-color: #FFFFFF;
-  margin-top: 65px;
+  margin-top: 95px;
 }
 
-#logo {
+#header {
   background-color: #FFFFFF;
   text-align: center;
-  height: 90px;
+  height: 80px;
+  text-decoration: none;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
-#logo img {
+#header img {
   position: relative;
-  top: 50%;
+  top: 62%;
   transform: translateY(-50%);
+  clear: both;
+
 }
 
 .hashtag {
@@ -146,6 +154,7 @@ a#hashtag-anchor {
   display: block;
   color: rgb(38,189,207);
   margin-top: 30px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -197,7 +206,7 @@ background: rgb(247, 143, 49);
     }
 
     body {
-        margin-top: 85px;
+        margin-top: 100px;
     }
     .post-container
     {
