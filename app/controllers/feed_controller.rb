@@ -10,6 +10,7 @@ class FeedController < ApplicationController
     respond_to do |format|
       format.html do
         @posts = Post.sorted_posts(ENV["HASHTAG"], 10)
+        @posts.each { |post| post.text = add_post_links post }
         render "index"
       end
       format.json do
