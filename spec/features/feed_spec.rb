@@ -7,7 +7,7 @@ describe 'home' do
   let(:instagram_profile_image) {"http://images.ak.instagram.com/profiles/profile_33110152_75sq_1380185157.jpg"}
   let(:instagram_media_image) {"http://scontent-a.cdninstagram.com/hphotos-xfa1/t51.2885-15/10684067_323739034474097_279647979_n.jpg"}
 
-  it 'should display single tweets details', js: true do
+  xit 'should display single tweets details', js: true do
     sleep ENV["API_Rate"].to_i + 0.5
     visit '/'
 
