@@ -16,3 +16,4 @@
 //= require imagesloaded.pkgd
 //= require jquery.flexslider
 //= require_tree .
+//= require screenfull.min
