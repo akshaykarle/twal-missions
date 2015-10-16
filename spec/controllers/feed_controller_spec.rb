@@ -43,7 +43,7 @@ describe FeedController do
         allow(APIService.instance).to receive(:pull_posts)
         get :index, :format => :json
 
-        expect(assigns(:posts).first.text).to eq('float like a butterfly <a href="http://twitter.com/hashtag/word" target="_blank">#word</a>')
+        expect(assigns(:posts).first.text).to eq('float like a butterfly <a target="_blank" href="http://twitter.com/hashtag/word">#word</a>')
       end
     end
   end
@@ -75,7 +75,7 @@ describe FeedController do
 
       get :get_next_page, last_post_id: 1, :format => :json
 
-      expect(assigns(:posts).first.text).to eq('float like a butterfly <a href="http://twitter.com/hashtag/word" target="_blank">#word</a>')
+      expect(assigns(:posts).first.text).to eq('float like a butterfly <a target="_blank" href="http://twitter.com/hashtag/word">#word</a>')
     end
   end
 end

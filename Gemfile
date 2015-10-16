@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
-
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.2'
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 gem 'pg'
@@ -53,9 +51,10 @@ group :production do
 end
 
 gem 'pry'
-gem 'pry-debugger'
+gem 'pry-byebug'
+gem 'rspec-its'
 
-ruby "2.1.1"
+ruby "2.2.3"
 # gem 'whenever', :require => false
 
 # Use ActiveModel has_secure_password
@@ -69,4 +68,3 @@ ruby "2.1.1"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-

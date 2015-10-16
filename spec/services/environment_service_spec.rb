@@ -25,18 +25,18 @@ describe EnvironmentService do
   end
 
   describe "disable retweets" do
-    it "should return what is set in env" do 
+    it "should return what is set in env" do
       test_env = ENV["DISABLE_RETWEETS"]
       ENV["DISABLE_RETWEETS"] = "false"
-      expect(EnvironmentService.disable_retweets).to be_false
-      ENV["DISABLE_RETWEETS"] = test_env 
+      expect(EnvironmentService.disable_retweets).to be_falsey
+      ENV["DISABLE_RETWEETS"] = test_env
     end
 
     it "should return true by default" do
       test_env = ENV["DISABLE_RETWEETS"]
       ENV["DISABLE_RETWEETS"] = ""
-      expect(EnvironmentService.disable_retweets).to be_true
-      ENV["DISABLE_RETWEETS"] = test_env      
+      expect(EnvironmentService.disable_retweets).to be_truthy
+      ENV["DISABLE_RETWEETS"] = test_env
     end
   end
 end
