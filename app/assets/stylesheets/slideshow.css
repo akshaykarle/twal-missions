@@ -1,26 +1,31 @@
 .flexslider {
-
-  /*height: 80%;*/
+  padding: 14px;
+  margin: 15px;
+  height: 90%;
+  border-color: #ee5c9f;
+  border-width: 1px;
+  background-color: #F2F2F2;
 }
 
 .flexslider .slides {
   height: auto;
+  width: auto;
 }
 
 .flexslider .slides li {
   /*height: 100%;*/
 }
+
 .flexslider .slides img{
-  width: 80%;
+  width: auto;
   margin: 0 auto;
-  /*width: auto;*/
 }
 
 .flexslider .slides .post-data{
   margin: 0 auto;
   text-align: center;
   margin-bottom: 10px;
-  /*width: 65%;*/
+  width: 90%;
 }
 .flexslider .slides a {
   color: #097AC0;
@@ -38,7 +43,7 @@
 }
 
 .flexslider .flex-control-nav {
-  bottom: -60px;
+  bottom: 0px;
 }
 .flex-control-paging li {
   display: none;

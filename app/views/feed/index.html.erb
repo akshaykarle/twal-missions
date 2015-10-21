@@ -1,34 +1,36 @@
-<div id="header">
-    <%= image_tag("tw_logo.png", height: "52", alt: "Edit Entry") %>
-    <%= image_tag("away_day_logo_center2.png", height: "60", alt: "Edit Entry") %>
+<div id="main-content">
+  <div id="left-column">
+    <%= image_tag("melhor_tecnologia.png", width: "290", alt: "Melhor Tecnologia") %>
+
     <span class="hashtag">#<%=ENV["HASHTAG"]%></span>
+
+    <button id="fullscreen-btn">Fullscreen</button>
   </div>
-</a>
 
-<div>
-  <button id="fullscreen">Fullscreen</button>
+  <div id="right-column">
+    <div class="flexslider">
+      <ul class="slides">
+        <% @posts.each_with_index do |post, i| %>
+          <% if post.media_url %>
+            <%= render 'post', post: post, i: i %>
+          <% end %>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+
+  <h1 id="loading"></h1>
+
+  <section class="footer">Made with love by <a href="http://toomanynames.com">Anirudh</a>,
+    <a href="https://twitter.com/scumbling" target="_blank">Dee</a>,
+    <a href="http://itsplatano.com" target="_blank">Justin</a>,
+    <a href="http://github.com/gitjulia" target="_blank">Julia</a>,
+    <a href="http://github.com/mlennon3" target="_blank">Michael</a>,
+    <a href="https://github.com/ParkDan" target="_blank">Dan</a>,
+    <a href="https://github.com/carlast22" target="_blank">Carla</a>,
+    <a href="https://github.com/jreyes33" target="_blank">Jonathan</a>,
+    <a href="https://github.com/akshaykarle" target="_blank">Akshay</a> and
+    <a href="https://github.com/pereiragislene" target="_blank">Gil</a>
+  </section>
+
 </div>
-
-<div class="flexslider">
-  <ul class="slides">
-    <% @posts.each_with_index do |post, i| %>
-      <% if post.media_url %>
-        <%= render 'post', post: post, i: i %>
-      <% end %>
-    <% end %>
-  </ul>
-</div>
-
-<h1 id="loading"></h1>
-
-<section class="footer">Made with love by <a href="http://toomanynames.com">Anirudh</a>,
-  <a href="https://twitter.com/scumbling" target="_blank">Dee</a>,
-  <a href="http://itsplatano.com" target="_blank">Justin</a>,
-  <a href="http://github.com/gitjulia" target="_blank">Julia</a>,
-  <a href="http://github.com/mlennon3" target="_blank">Michael</a>,
-  <a href="https://github.com/ParkDan" target="_blank">Dan</a>,
-  <a href="https://github.com/carlast22" target="_blank">Carla</a>,
-  <a href="https://github.com/jreyes33" target="_blank">Jonathan</a>,
-  <a href="https://github.com/pereiragislene" target="_blank">Gil</a> and
-  <a href="https://github.com/akshaykarle" target="_blank">Akshay</a>
-</section>
