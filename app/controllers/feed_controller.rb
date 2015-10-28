@@ -9,8 +9,7 @@ class FeedController < ApplicationController
   def index
     respond_to do |format|
       format.html do
-        @posts = Post.sorted_posts(ENV["HASHTAG"], 10)
-        @posts.each { |post| post.text = add_post_links post }
+        @posts = load_new_posts(ENV["HASHTAG"], 10)
         render "index"
       end
       format.json do
@@ -22,10 +21,19 @@ class FeedController < ApplicationController
 
   def get_next_page
     @posts = Post.next_posts(params[:last_post_id], 10)
+    if @posts.empty?
+      logger.debug 'DEBUG: @posts is empty. Loading new posts...'
+      @posts = load_new_posts(ENV["HASHTAG"], 10)
+    end
     render_json_posts @posts
   end
 
   private
+
+  def load_new_posts(hashtag, limit)
+    @posts = Post.sorted_posts(hashtag, limit)
+    return @posts.each { |post| post.text = add_post_links post }
+  end
 
   def render_json_posts(posts)
     if posts.nil? || posts.empty?

@@ -61,7 +61,7 @@ describe FeedController do
       expect(assigns(:posts).count).to eq(10)
     end
 
-    it 'should return status not_modified if there are no more posts left' do
+    it 'should return status not_modified if there are no more posts left', dont_run_in_snap: true do
       (0..60).each { |i| FactoryGirl.create(:post, time_of_post: Time.now - i)}
       get :get_next_page, last_post_id: Post.last.id, :format => :json
 
