@@ -278,6 +278,10 @@ background: rgb(247, 143, 49);
     width: 100%;
   }
 
+  #left-column {
+    padding-top: 10px;
+  }
+
   .footer {
     display: none;
   }

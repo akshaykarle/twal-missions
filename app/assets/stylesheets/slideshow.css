@@ -8,7 +8,6 @@
 }
 
 .flexslider .slides {
-  height: auto;
   width: auto;
 }
 
@@ -65,4 +64,11 @@
 
 .flex-direction-nav a {
   color: #FFF;
+}
+
+@media ( max-width: 768px )
+{
+  .flexslider .slides img{
+    width: 85%;
+  }
 }
