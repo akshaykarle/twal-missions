@@ -2,18 +2,14 @@
   padding: 14px;
   margin: 15px;
   height: 90%;
-  border-color: #ee5c9f;
+  border-color: #000;
   border-width: 1px;
-  background-color: #F2F2F2;
+  background-color: #000;
 }
 
 .flexslider .slides {
   height: auto;
   width: auto;
-}
-
-.flexslider .slides li {
-  /*height: 100%;*/
 }
 
 .flexslider .slides img{
@@ -26,9 +22,12 @@
   text-align: center;
   margin-bottom: 10px;
   width: 90%;
+  padding: 10px;
 }
+
 .flexslider .slides a {
-  color: #097AC0;
+  /*color: #097AC0;*/
+  color: #ee5c9f;
 }
 
 .flexslider .slides .author {
@@ -38,7 +37,7 @@
 }
 
 .flexslider .slides .text {
-  color: black;
+  color: #FFF;
   display: inline;
 }
 
@@ -48,6 +47,22 @@
 .flex-control-paging li {
   display: none;
 }
+
+.flex-control-paging li a{
+  background: #747572;
+}
+
+.flex-control-paging li a:hover{
+  background: #F2F2F2;
+}
+.flex-control-paging li a.flex-active{
+  background: #FFF;
+}
+
 .flex-control-paging li:nth-last-child(-n + 20) {
   display: inline-block;
+}
+
+.flex-direction-nav a {
+  color: #FFF;
 }
