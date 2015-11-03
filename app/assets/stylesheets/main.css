@@ -222,7 +222,7 @@ a#hashtag-anchor {
 }
 
 .footer {
-  color: rgb(38,189,207);
+  color: #FFF;
   text-align: center;
   font-size: 14px;
   position: fixed;
@@ -232,7 +232,7 @@ a#hashtag-anchor {
 }
 
 .footer a {
-  color: #FFF;
+  color: #7ec6cd;
 }
 
 /*ThoughtWorks Magenta*/

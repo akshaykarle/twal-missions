@@ -24,9 +24,13 @@
   padding: 10px;
 }
 
-.flexslider .slides a {
+.flexslider .slides a.author {
   /*color: #097AC0;*/
   color: #ee5c9f;
+}
+
+.flexslider .slides .text a {
+  color: #7ec6cd;
 }
 
 .flexslider .slides .author {

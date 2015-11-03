@@ -1,7 +1,7 @@
 <li data-post-id="<%= post.id %>">
   <img src="<%= post.media_url %>">
   <div class="post-data">
-    <%= link_to post.screen_name, post.profile_image_url, class: "author" %>
+    <%= link_to "@#{post.screen_name}:", post.profile_image_url, class: "author" %>
     <%= content_tag :p, post.text.html_safe, class: "text" %>
   </div>
 </li>
