@@ -1,12 +1,12 @@
 html, body {
   padding: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
 }
 
 html {
     background-color: #000;
-    margin:0;
     color:#000;
 }
 
@@ -286,6 +286,7 @@ background: rgb(247, 143, 49);
   #left-column, #right-column {
     float: none;
     width: 100%;
+    height: auto;
   }
 
   #left-column {
