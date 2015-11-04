@@ -52,7 +52,7 @@ module SampleTweetResponses
           "coordinates" => nil,
           "favorited" => false,
           "truncated" => false,
-          "created_at" => "Fri Sep 21 23:40:54 +0000 2012",
+          "created_at" => "Fri Sep 21 23:40:54 +0000 2015",
           "id_str" => "249292149810667520",
           "entities" => {
             "media" => [{
@@ -170,7 +170,7 @@ module SampleTweetResponses
           "coordinates" => nil,
           "favorited" => false,
           "truncated" => false,
-          "created_at" => "Fri Sep 21 23:30:20 +0000 2012",
+          "created_at" => "Fri Sep 21 23:30:20 +0000 2015",
           "id_str" => "249289491129438208",
           "entities" => {
             "urls" => [
@@ -287,7 +287,7 @@ module SampleTweetResponses
           "coordinates" => nil,
           "favorited" => false,
           "truncated" => false,
-          "created_at" => "Fri Sep 21 23:50:54 +0000 2012",
+          "created_at" => "Fri Sep 21 23:50:54 +0000 2015",
           "id_str" => "249292149810667520",
           "entities" => {
             "urls" => [
@@ -388,7 +388,7 @@ module SampleTweetResponses
           "coordinates" => nil,
           "favorited" => false,
           "truncated" => false,
-          "created_at" => "Fri Sep 21 23:40:54 +0000 2012",
+          "created_at" => "Fri Sep 21 23:40:54 +0000 2015",
           "id_str" => "249292149810667520",
           "entities" => {
             "media" => [{
@@ -506,7 +506,7 @@ module SampleTweetResponses
           "coordinates" => nil,
           "favorited" => false,
           "truncated" => false,
-          "created_at" => "Fri Sep 21 23:30:20 +0000 2012",
+          "created_at" => "Fri Sep 21 23:30:20 +0000 2015",
           "id_str" => "249289491129438208",
           "entities" => {
             "urls" => [
@@ -622,7 +622,7 @@ module SampleTweetResponses
             "coordinates" => nil,
             "favorited" => false,
             "truncated" => false,
-            "created_at" => "Fri Sep 21 23:40:54 +0000 2012",
+            "created_at" => "Fri Sep 21 23:40:54 +0000 2015",
             "id_str" => "249292149810667520",
             "entities" => {
               "media" => [{
@@ -740,7 +740,7 @@ module SampleTweetResponses
             "coordinates" => nil,
             "favorited" => false,
             "truncated" => false,
-            "created_at" => "Fri Sep 21 23:30:20 +0000 2012",
+            "created_at" => "Fri Sep 21 23:30:20 +0000 2015",
             "id_str" => "249289491129438208",
             "entities" => {
               "urls" => [
@@ -856,7 +856,7 @@ module SampleTweetResponses
             "coordinates" => nil,
             "favorited" => false,
             "truncated" => false,
-            "created_at" => "Fri Sep 21 23:40:54 +0000 2012",
+            "created_at" => "Fri Sep 21 23:40:54 +0000 2015",
             "id_str" => "249292149810667520",
             "entities" => {
               "media" => [{
@@ -974,7 +974,7 @@ module SampleTweetResponses
             "coordinates" => nil,
             "favorited" => false,
             "truncated" => false,
-            "created_at" => "Fri Sep 21 23:30:20 +0000 2012",
+            "created_at" => "Fri Sep 21 23:30:20 +0000 2015",
             "id_str" => "249289491129438208",
             "entities" => {
               "urls" => [

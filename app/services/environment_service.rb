@@ -12,4 +12,14 @@ class EnvironmentService
 	def self.disable_retweets
 		ENV["DISABLE_RETWEETS"] != "false"
 	end
+
+  def self.min_date_to_filter
+		return nil if ENV["MIN_DATE"].blank?
+
+		begin
+		   return DateTime.parse(ENV["MIN_DATE"])
+		rescue ArgumentError
+		   return	nil
+		end
+  end
 end

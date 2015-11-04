@@ -8,7 +8,7 @@ The application uses [Twitter's REST API](https://dev.twitter.com/rest/reference
 
 To Deploy To Heroku
 -------------------
- Simply put the environment variables, as described below, into Heroku's dashboard after hitting the Deploy to Heroku Button above. 
+ Simply put the environment variables, as described below, into Heroku's dashboard after hitting the Deploy to Heroku Button above.
  [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/anirudh-eka/dashtag.git)
 
 
@@ -21,8 +21,9 @@ Currently the application expects the following variables in the environment:
 -	TWITTER_BEARER_CREDENTIALS
 - 	INSTAGRAM_CLIENT_ID
 -	DISABLE_RETWEETS
+- MIN_DATE
 
-`Hashtag` should be set to the text of the hashtag excluding the initial '#'. So if you wanted all of the posts with the "#peace" on Twitter, you set: 
+`Hashtag` should be set to the text of the hashtag excluding the initial '#'. So if you wanted all of the posts with the "#peace" on Twitter, you set:
 	HASHTAG=peace
 
 To prevent from storing posts with certain words set the environment variable `CENSORED_WORDS` to the words you dont want to include in the .env file. For example, to censor posts that contain the word, "question", add the following line in the .env file:
@@ -53,6 +54,10 @@ To find the key and secret for your app follow these [directions](https://dev.tw
 
 The application by default does not capture retweet posts from twitter. To capture retweets, set the `DISABLE_RETWEETS`, environment variable to 'false'.
 
+`MIN_DATE` should be set in case you want to specify a minimum date to filter the posts. For example, if you set MIN_DATE = 2015-09-01, only posts from this date on will be displayed.
+The format should be YYYY-MM-DD.
+
+
 To Run Locally
 ---------------
 To set up the application locally you should first create a new file called `.env` in the root dir of the app. After pulling the app into a local repository on your machine, create a .env file at the root of your repository. This is where you can set environment variable that will be available to your application, but ignored by git (thanks to [dotenv](https://github.com/bkeepers/dotenv)).
@@ -72,7 +77,7 @@ Once you have the .env file setup, run bundler from the command line:
 	$ bundle
 
 create/migrate the database:
-	
+
 	$ rake db:create && rake db:migrate
 
 and start the server:

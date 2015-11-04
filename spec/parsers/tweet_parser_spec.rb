@@ -4,11 +4,11 @@ describe TweetParser do
   describe 'should parse the tweet' do
     let(:response) { SampleTweetResponses.tweet_response }
 
-    it 'should parse tweet attributes from tweet response' do 
+    it 'should parse tweet attributes from tweet response' do
       attributes = {  source: "twitter",
           text: "##{ENV["HASHTAG"]}",
           screen_name: "bullcityrecords",
-          time_of_post: "Fri Sep 21 23:40:54 +0000 2012",
+          time_of_post: "Fri Sep 21 23:40:54 +0000 2015",
           profile_image_url: "http://a0.twimg.com/profile_images/447958234/Lichtenstein_normal.jpg",
           media_url: "https://pbs.twimg.com/media/BoqqU1wIMAAr_zO.jpg",
           post_id: "249292149810667520" }

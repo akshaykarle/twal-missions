@@ -26,7 +26,12 @@ class APIService
       parsed_response += pull_instagram_posts_and_parse(hashtag) if EnvironmentService.instagram_client_id
       parsed_response += pull_twitter_posts_and_parse(hashtag) if EnvironmentService.twitter_bearer_credentials
       parsed_response.each do |attributes|
-        Post.create(attributes)
+        min_date = EnvironmentService.min_date_to_filter
+        if min_date
+            Post.create(attributes) if attributes[:time_of_post] > min_date
+        else
+            Post.create(attributes)
+        end
       end
     else
       raise "Time since last pull is less than api rate limit"

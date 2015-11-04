@@ -23,7 +23,7 @@ describe Post do
     @gram_one = Post.create!(
       source: "instagram",
       screen_name: "qwerty",
-      time_of_post: "Fri Sep 21 23:40:54 +0000 2012",
+      time_of_post: "Fri Sep 21 23:40:54 +0000 2015",
       profile_image_url: "xyz",
       text: "Hey there",
       media_url: "abc",
@@ -32,7 +32,7 @@ describe Post do
     @gram_two = Post.create!(
       source: "instagram",
       screen_name: "ABCDEFG",
-      time_of_post: "Fri Sep 20 23:40:54 +0000 2012",
+      time_of_post: "Fri Sep 20 23:40:54 +0000 2015",
       profile_image_url: "xyz",
       text: "friendship",
       media_url: "def",
@@ -42,7 +42,7 @@ describe Post do
       source: "twitter",
       text: "##{ENV["HASHTAG"]}",
       screen_name: "bullcityrecords",
-      time_of_post: "Fri Sep 21 22:40:54 +0000 2012",
+      time_of_post: "Fri Sep 21 22:40:54 +0000 2015",
       profile_image_url: "http://a0.twimg.com/profile_images/447958234/Lichtenstein_normal.jpg",
       post_id: "789")
 
