@@ -36,6 +36,7 @@ body {
 #right-column {
   margin-right: 20px;
   overflow: hidden;
+  height: 95%;
 }
 
 #left-column img, #left-column button, #left-column span {
