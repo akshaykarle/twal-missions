@@ -44,6 +44,15 @@ body {
   margin: 0 auto;
 }
 
+#left-column .glyphs {
+  width: 290px;
+  margin-bottom: 12px;
+}
+
+#left-column .best-technology {
+  width: 290px;
+}
+
 #left-column span {
   margin-top: 40px;
   font-weight: bold;
@@ -281,6 +290,22 @@ background: rgb(247, 143, 49);
 
   #left-column {
     padding-top: 10px;
+  }
+
+  #left-column span {
+    margin-top: 25px;
+  }
+
+  #left-column .glyphs {
+    width: 200px;
+  }
+
+  #left-column .best-technology {
+    width: 250px;
+  }
+
+  #left-column button {
+    margin-top: 0px;
   }
 
   .footer {
